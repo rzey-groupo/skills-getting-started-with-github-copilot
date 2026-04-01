@@ -58,20 +58,113 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #d8def5;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: #0066cc;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.activity-description {
+  color: #455a64;
+}
+
+.activity-spots {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #e8eefc;
+  color: #1a237e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e3e8f8;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-weight: 700;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #2f3c4a;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.participants-empty {
+  color: #6b7c93;
+  font-style: italic;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color: #eef3ff;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-delete {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #f0b1b9;
+  background-color: #ffe8ec;
+  color: #b71c1c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.participant-delete:hover {
+  background-color: #ffd6dd;
+}
+
+.participant-delete:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
 }
 
 .form-group {
